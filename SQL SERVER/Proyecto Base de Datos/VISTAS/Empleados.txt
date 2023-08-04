@@ -1,0 +1,16 @@
+CREATE VIEW VistaEmpleados 
+AS
+SELECT Nombre, Edad
+FROM Clientes;
+
+EXEC  sp_helptext VistaEmpleados;
+
+CREATE PROCEDURE AgregarEmpleados
+@ID Int,
+@Nombre VARCHAR(50),
+@Edad INT
+AS
+BEGIN
+   INSERT INTO Empleados (ID, Nombre, Edad)
+   VALUES (@ID , @Nombre, @Edad);
+END;

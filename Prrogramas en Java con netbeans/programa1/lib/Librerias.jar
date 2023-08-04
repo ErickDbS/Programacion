@@ -1,0 +1,96 @@
+package com.mycompany.librerias;
+
+public class Librerias {
+
+    public class rectangulo {
+        public static double area(double b, double h)
+        {
+         return b*h;   
+        }
+        
+        public static double perimetro(double b, double h, double p)
+        {
+         return 2*(b+h);
+        }
+    }
+    
+    public class circulo {
+        public static double area(double r)
+        {
+         return 2*3.14*r;   
+        }
+        
+        public static double perimetro(double r)
+        {
+         return 3.14*(r*r);   
+        }
+    }
+    
+    public class cuadrado{
+        public static double area(double l)
+        {
+         return l*l;   
+        }
+        
+        public static double perimetro(double l)
+        {
+         return 4*l;   
+        }
+    }
+    
+    public class trianguloIsosceles{
+        public static double area(double b, double h)
+        {
+         return b*h/2;   
+        }
+        
+        public static double perimetro(double l, double b)
+        {
+         return 2*(l+b);   
+        }
+    }
+    
+    public class pentagono{
+        public static double perimetro(double l)
+        {
+         return 5*l;   
+        }
+    }
+    
+    
+    public class trapecio{
+        public static double area(double b1, double b2, double h)
+        {
+            return (b1 + b2) * h / 2;
+        }
+        
+        public static double perimetro(double b1, double b2, double l1, double l2)
+        {
+            return l1 + l2 + b1 + b2;
+        }
+    }
+    
+    public class rombo{
+        public static double area(double d1, double d2)
+        {
+            return d1 * d2 / 2;
+        }
+        
+         public static double perimetro(double l)
+        {
+            return 4*l;
+        }
+    }
+    
+    public class hexagono{
+        public static double area(double l)
+        {
+            return (3 * Math.sqrt(3) / 2) * Math.pow(l, 2);
+        }
+        
+        public static double perimetro(double l)
+        {
+            return 6*l;
+        }
+    }
+}

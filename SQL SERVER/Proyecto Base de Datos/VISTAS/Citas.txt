@@ -1,0 +1,17 @@
+CREATE VIEW VistaCitas 
+AS
+SELECT Nombre, Fecha, Motivo
+FROM Citas;
+
+EXEC  sp_helptext VistaCitas;
+
+CREATE PROCEDURE AgregarCita
+@ID_Clientes Int,
+@Nombre VARCHAR(50),
+@Fecha datetime,
+@Motivo VARCHAR(200)
+AS
+BEGIN
+   INSERT INTO Citas (ID_Clientes, Nombre, Fecha, Motivo)
+   VALUES (@ID_Clientes , @Nombre, @Fecha, @Motivo);
+END;

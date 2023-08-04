@@ -1,0 +1,17 @@
+CREATE VIEW VistaProcedimientos
+AS
+SELECT Nombre, Costo, FechasDisponibles
+FROM Procedimientos;
+
+EXEC  sp_helptext VistaProcedimientos;
+
+CREATE PROCEDURE AgregarProcedimiento
+@ID_Procedimiento Int,
+@Nombre VARCHAR(200),
+@Costo INT,
+@FechasDisponibles VARCHAR(50)
+AS
+BEGIN
+   INSERT INTO Procedimientos (ID_Procedimiento, Nombre, Costo, FechasDisponibles)
+   VALUES (@ID_Procedimiento , @Nombre, @Costo, @FechasDisponibles);
+END;

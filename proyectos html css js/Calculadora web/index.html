@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="calculadora.js"></script>
+</head>
+<body>
+    <div class="div-maestro">
+        <div class="campo-numeros">
+            <input id="display" type="text">
+        </div>
+        <div class="primera-fila">
+            <button onclick="limpiar('AC')" id="AC" >AC</button>
+            <button onclick="cambiarSigno('+/-')"id="+/-">+/-</button>
+            <button onclick="agregarValor('%')"id="%">%</button>
+            <button onclick="agregarValor('/')"id="/"class="cambiar-color">/</button>
+        </div>
+        <div class="segunda-fila">
+            <button onclick="agregarValor('7')"id="7">7</button>
+            <button onclick="agregarValor('8')"id="8">8</button>
+            <button onclick="agregarValor('9')"id="9">9</button>
+            <button onclick="agregarValor('*')"id="X"class="cambiar-color">X</button>
+        </div>
+        <div class="tercer-fila">
+            <button onclick="agregarValor('4')"id="4">4</button>
+            <button onclick="agregarValor('5')"id="5">5</button>
+            <button onclick="agregarValor('6')"id="6">6</button>
+            <button onclick="agregarValor('-')"id="-"class="cambiar-color">-</button>
+        </div>
+        <div class="cuarta-fila">
+            <button onclick="agregarValor('1')"id="1">1</button>
+            <button onclick="agregarValor('2')"id="2">2</button>
+            <button onclick="agregarValor('3')"id="3">3</button>
+            <button onclick="agregarValor('+')"id="+"class="cambiar-color">+</button>
+        </div>
+        <div class="quinta-fila">
+            <button onclick="agregarValor('0')"id="boton-cero" >0</button>
+            <button onclick="agregarValor('.')"id=".">.</button>
+            <button onclick="calcular('=')"id="="class="cambiar-color">=</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

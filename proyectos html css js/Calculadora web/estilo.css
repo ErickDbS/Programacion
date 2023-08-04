@@ -1,0 +1,101 @@
+body{
+    background-color: #d6161694;
+}
+.div-maestro {
+   margin: 100px 500px 100px ;
+   border: 2px solid #000;
+   border-radius: 20px;
+  padding: 15px;
+  display: inline-block;
+  background-color: black;
+
+}
+
+.campo-numeros input{
+    display: flex;
+    height: 40px;
+    width: 200px;
+    text-align: right;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    
+}
+
+.primera-fila button{
+    background-color: rgb(130, 149, 165);
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.segunda-fila button{
+    background-color: rgb(175, 191, 204);
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+.tercer-fila button{
+    background-color: rgb(175, 191, 204);
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+.cuarta-fila button{
+    background-color: rgb(175, 191, 204);
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+.quinta-fila button{
+    background-color: rgb(175, 191, 204);
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+
+#boton-cero {
+    width: 101px;
+}
+
+.quinta-fila .cambiar-color{
+    background-color: rgb(254, 195, 0);
+}
+.cuarta-fila .cambiar-color{
+    background-color: rgb(254, 195, 0);
+}
+.tercer-fila .cambiar-color{
+    background-color: rgb(254, 195, 0);
+}
+.segunda-fila .cambiar-color{
+    background-color: rgb(254, 195, 0);
+}
+.primera-fila .cambiar-color{
+    background-color: rgb(254, 195, 0);
+}
+
+.primera-fila button:hover{
+    background-color: #957d7c4b;
+}
+.segunda-fila button:hover{
+    background-color: #957d7c4b;
+}
+.tercer-fila button:hover{
+    background-color: #957d7c4b;
+}
+.cuarta-fila button:hover{
+    background-color: #957d7c4b;
+}
+.quinta-fila button:hover{
+    background-color: #957d7c4b;
+}
